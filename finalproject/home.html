@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}changes{% endblock %}{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Video or Image</title>
+</head>
+<body>
+    <h1>Upload Video or Image Files</h1>
+    <form method="POST" enctype="multipart/form-data" action="/upload">
+        <label for="file">Select a Video or Image File:</label><br>
+        <input type="file" id="file" name="file" accept="video/*, image/*"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
+
+{% endblock %}
